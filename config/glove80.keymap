@@ -20,6 +20,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+// My custom macros.
+#include "macros.h"
+
 /* Automatically generated layer name #define */
 #define LAYER_First 0
 #define LAYER_Lower 1
@@ -283,7 +286,7 @@
             bindings = <
                &kp F1    &kp F2    &kp F3    &kp F4  &kp F5                                                                                  &kp F6     &kp F7    &kp F8    &kp F9  &kp F10
               &kp F11     &none     &none    &kp N3  &kp N4  &kp N5                                                                  &kp N6  &kp N7     &kp N8     &none     &none    &none
-                &kp B     &kp Q     &kp W     &kp E   &kp R   &kp T                                                                   &kp Y   &kp U      &kp I     &kp O     &kp P    &none
+       &open_terminal     &kp Q     &kp W     &kp E   &kp R   &kp T                                                                   &kp Y   &kp U      &kp I     &kp O     &kp P    &none
                 &none     &kp A     &kp S     &kp D   &kp F   &kp G                                                                   &kp H   &kp J      &kp K     &kp L  &kp SEMI    &none
                 &none     &kp Z     &kp X     &kp C   &kp V   &kp B  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp RGUI  &kp RCTRL  &kp RSHFT   &kp N   &kp M  &kp COMMA   &kp DOT     &none    &none
  &magic LAYER_Magic 0  &kp LBKT  &kp LPAR  &kp FSLH   &mo 1           &kp BSPC    &kp DEL  &kp RALT   &kp TAB    &kp RET  &kp SPACE           &mo 1   &kp BSLH  &kp RPAR  &kp RBKT    &none
