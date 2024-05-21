@@ -38,7 +38,6 @@
                 , <&kp S>;
         };
     adp_start_docker_example: adp_start_docker_example {
-            label = "&ADP_START_DOCKER_EXAMPLE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -70,7 +69,6 @@
                 , <&kp E>;
         };
     adp_run_example_optimized: adp_run_example_optimized {
-            label = "&ADP_RUN_EXAMPLE_OPTIMIZED";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -105,7 +103,6 @@
                 , <&kp D>;
         };
     lock: lock {
-            label = "&LOCK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -115,7 +112,6 @@
                 , <&kp L>;
         };
     desktop_up: desktop_up {
-            label = "&DESKTOP_UP";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -127,7 +123,6 @@
                 , <&kt LCTRL>;
         };
     desktop_down: desktop_down {
-            label = "&DESKTOP_DOWN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -139,7 +134,6 @@
                 , <&kt LCTRL>;
         };
     open_terminal: open_terminal {
-            label = "&OPEN_TERMINAL";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -151,7 +145,6 @@
                 , <&kt LCTRL>;
         };
     tab_prev: tab_prev {
-            label = "&TAB_PREV";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -163,7 +156,6 @@
                 , <&kt LCTRL>;
         };
     tab_next: tab_next {
-            label = "&TAB_NEXT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -173,7 +165,6 @@
                 , <&kp TAB>;
         };
     tab_move_right: tab_move_right {
-            label = "&TAB_MOVE_RIGHT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -185,7 +176,6 @@
                 , <&kt LCTRL>;
         };
     tab_move_left: tab_move_left {
-            label = "&TAB_MOVE_LEFT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -197,7 +187,6 @@
                 , <&kt LCTRL>;
         };
     window_next: window_next {
-            label = "&WINDOW_NEXT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -207,7 +196,6 @@
                 , <&kp TAB>;
         };
     window_close: window_close {
-            label = "&WINDOW_CLOSE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -217,7 +205,6 @@
                 , <&kp F4>;
         };
     zoom_in: zoom_in {
-            label = "&ZOOM_IN";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -227,7 +214,6 @@
                 , <&kp PLUS>;
         };
     zoom_out: zoom_out {
-            label = "&ZOOM_OUT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -238,12 +224,15 @@
         };
     };
     // 1 param macro
-    my_one_param_macro: my_one_param_macro {
-        label = "&ONE_PARAM_MACRO";
+    one_param: one_param {
         compatible = "zmk,behavior-macro-one-param";
-        #binding-cells = <1>; // Must be 1
-        bindings = <&kp>;
+        #binding-cells = <1>;
+        tap-ms = <1>;
+        wait-ms = <1>;
+        bindings
+            = <&macro_press &kp LSHFT>
+            , <&macro_param_1to1>
+            , <&kp MACRO_PLACEHOLDER>;
+            , <&macro_release &kp LSHFT>;
     };
-
-
 };
