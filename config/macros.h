@@ -238,4 +238,13 @@
                 , <&kp MINUS>;
         };
     };
+    // 1 param macro
+    my_one_param_macro: my_one_param_macro {
+        label = "&ONE_PARAM_MACRO";
+        compatible = "zmk,behavior-macro-one-param";
+        #binding-cells = <1>; // Must be 1
+        bindings = <&kp>;
+    };
+
+
 };
