@@ -231,7 +231,7 @@
         bindings
             = <&macro_press &kp LSHFT>
             , <&macro_param_1to1>
-            , <&kp MACRO_PLACEHOLDER>;
+            , <&kp MACRO_PLACEHOLDER>
             , <&macro_release &kp LSHFT>;
         };
     };
