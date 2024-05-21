@@ -1,32 +1,33 @@
 
-/* Layer name #define */
+/* Layer name defines. */
 #define LAYER_Base 0
 #define LAYER_Hold 1
 #define LAYER_OneShot 2
 #define LAYER_Magic 3
 
-/* To deal with the situation where there is no Lower layer, to keep &lower happy */
+/* To deal with the situation where there is no Lower layer, keep &lower happy. */
 #ifndef LAYER_Lower
 #define LAYER_Lower 0
 #endif
 
-/* ZMK includes */
+/* ZMK includes. */
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
-/* My includes */
+/* Rearranged code for cleanliness. */
 #include "built_in_macros.h"
 #include "key_positions.h"
+
+/* My includes. */
+#include "behaviors.h"
 #include "macros.h"
 
-/* Automatically generated keymap */
 / {
     keymap {
         compatible = "zmk,keymap";
-
 
         layer_Base {
             bindings = <
@@ -36,7 +37,7 @@
 /* R3 */                  &none            &none            &kp W            &kp E            &kp R            &kp T                                                   /*|*/                                                      &kp Y          &kp U             &kp I             &kp O            &none           &none
 /* R4 */                  &kp Q            &kp A            &kp S            &kp D            &kp F            &kp G                                                   /*|*/                                                      &kp H          &kp J             &kp K             &kp L         &kp SEMI           &kp P
 /* R5 */                  &none            &kp Z            &kp X            &kp C            &kp V            &kp B           &none          &none             &none  /*|*/         &none          &none          &none          &kp N          &kp M         &kp COMMA           &kp DOT            &none           &none
-/* R6 */   &magic LAYER_Magic 0            &none            &none            &none            &none                         &kp BSPC        &kp DEL             &none  /*|*/         &none        &kp RET      &kp SPACE                         &mo 1          &kp BSLH          &kp RPAR         &kp RBKT           &none
+/* R6 */   &magic LAYER_Magic 0            &none            &none            &none            &none                         &kp BSPC        &kp DEL     &layer_helper  /*|*/         &none        &kp RET      &kp SPACE                         &mo 1          &kp BSLH          &kp RPAR         &kp RBKT           &none
 //                                                                                                                                T4             T5                T6  /*|*/            T6             T5             T4
             >;
         };
