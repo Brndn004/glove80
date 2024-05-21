@@ -1,8 +1,7 @@
 
 / {
     macros {
-        adp_start_fe: adp_start_fe {
-            label = "&ADP_START_FE";
+        asfe: adp_start_fe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
