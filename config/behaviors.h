@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo_tog LAYER_Hold LAYER_OneShot>, <&tog LAYER_Hold>;
+            bindings = <&mo_sticky LAYER_Hold LAYER_OneShot>, <&tog LAYER_Hold>;
         };
     };
 };
