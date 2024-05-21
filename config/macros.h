@@ -222,7 +222,6 @@
                 = <&sk LCTRL>
                 , <&kp MINUS>;
         };
-    };
     // 1 param macro
     one_param: one_param {
         compatible = "zmk,behavior-macro-one-param";
@@ -234,5 +233,6 @@
             , <&macro_param_1to1>
             , <&kp MACRO_PLACEHOLDER>;
             , <&macro_release &kp LSHFT>;
+        };
     };
 };
