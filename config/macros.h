@@ -344,6 +344,6 @@
                 = <&kp SEMI>
                 , <&macro_param_1to1>
                 , <&kp MACRO_PLACEHOLDER>;
- 
+        };
     };
 };
