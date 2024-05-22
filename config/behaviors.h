@@ -44,7 +44,7 @@
         spenter: spenter {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <175>;
             bindings = <&kp SPACE>, <&kp RET>;
         };
         shft_ctrl: shft_ctrl {
