@@ -6,7 +6,7 @@
         layer_helper: layer_helper {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&sl LAYER_OneShot>, <&to LAYER_Hold>;
         };
         stick_shift: stick_shift {

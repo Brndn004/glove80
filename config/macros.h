@@ -37,7 +37,7 @@
                 , <&kp R>
                 , <&kp S>;
         };
-    asde: adp_start_docker_example {
+        asde: adp_start_docker_example {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -68,7 +68,7 @@
                 , <&kp L>
                 , <&kp E>;
         };
-    areo: adp_run_example_optimized {
+        areo: adp_run_example_optimized {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -102,7 +102,7 @@
                 , <&kp E>
                 , <&kp D>;
         };
-    lock: lock {
+        lock: lock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -111,7 +111,7 @@
                 = <&sk LGUI>
                 , <&kp L>;
         };
-    slack_prev: slack_prev {
+        slack_prev: slack_prev {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -122,7 +122,7 @@
                 , <&kp UP>
                 , <&kt LALT>;
         };
-    slack_next: slack_next {
+        slack_next: slack_next {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -133,7 +133,7 @@
                 , <&kp DOWN>
                 , <&kt LALT>;
         };
-    dt_up: desktop_up {
+        dt_up: desktop_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -144,7 +144,7 @@
                 , <&kp UP>
                 , <&kt LCTRL>;
         };
-    dt_dn: desktop_down {
+        dt_dn: desktop_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -155,7 +155,7 @@
                 , <&kp DOWN>
                 , <&kt LCTRL>;
         };
-    term_open: open_terminal {
+        term_open: open_terminal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -166,7 +166,7 @@
                 , <&kp T>
                 , <&kt LCTRL>;
         };
-    tab_prev: tab_prev {
+        tab_prev: tab_prev {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -177,7 +177,7 @@
                 , <&kp TAB>
                 , <&kt LCTRL>;
         };
-    tab_next: tab_next {
+        tab_next: tab_next {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -186,7 +186,7 @@
                 = <&sk LCTRL>
                 , <&kp TAB>;
         };
-    tab_move_right: tab_move_right {
+        tab_move_right: tab_move_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -197,7 +197,7 @@
                 , <&kp PG_DN>
                 , <&kt LCTRL>;
         };
-    tab_move_left: tab_move_left {
+        tab_move_left: tab_move_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -208,7 +208,7 @@
                 , <&kp PG_UP>
                 , <&kt LCTRL>;
         };
-    win_snap_left: window_snap_left {
+        win_snap_left: window_snap_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -217,7 +217,7 @@
                 = <&sk LGUI>
                 , <&kp LEFT>;
         };
-    win_snap_right: window_snap_right {
+        win_snap_right: window_snap_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -226,7 +226,7 @@
                 = <&sk LGUI>
                 , <&kp RIGHT>;
         };
-    win_up: window_up {
+        win_up: window_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -239,7 +239,7 @@
                 , <&kt LALT>
                 , <&kt LCTRL>;
         };
-    win_dn: window_dn {
+        win_dn: window_dn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -252,7 +252,7 @@
                 , <&kt LALT>
                 , <&kt LCTRL>;
         };
-    win_prev: window_prev {
+        win_prev: window_prev {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -263,7 +263,7 @@
                 , <&kp TAB>
                 , <&kt LALT>;
         };
-    win_next: window_next {
+        win_next: window_next {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -272,7 +272,7 @@
                 = <&sk LALT>
                 , <&kp TAB>;
         };
-    win_close: window_close {
+        win_close: window_close {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -281,7 +281,7 @@
                 = <&sk LALT>
                 , <&kp F4>;
         };
-    zoom_in: zoom_in {
+        zoom_in: zoom_in {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -290,7 +290,7 @@
                 = <&sk LCTRL>
                 , <&kp PLUS>;
         };
-    zoom_out: zoom_out {
+        zoom_out: zoom_out {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -299,7 +299,7 @@
                 = <&sk LCTRL>
                 , <&kp MINUS>;
         };
-    hist_back: hist_back {
+        hist_back: hist_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
@@ -308,7 +308,7 @@
                 = <&sk LALT>
                 , <&kp LEFT>;
         };
-    hist_for: hist_for {
+        hist_for: hist_for {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
