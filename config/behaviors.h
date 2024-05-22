@@ -1,11 +1,4 @@
 
-/* #define VIM_DANCE_DOUBLE(t1, t2, t3) &vim_dance_double t1 t2 t3 */
-/* #define VIM_DANCE_SINGLE(t1, t2) &vim_dance t1 t2 */
-/* #define VIM_DANCE_REPEAT(t1) VIM_DANCE_SINGLE(t1, t1) */
-/* #define GET_MACRO(_1,_2,_3,NAME,...) NAME */
-/* #define VIM_DANCE(...) GET_MACRO(__VA_ARGS__, VIM_DANCE_DOUBLE, VIM_DANCE_SINGLE, VIM_DANCE_REPEAT)(__VA_ARGS__) */
-
-
 / {
     behaviors {
         // Hold for first param, sticky layer for second param.
