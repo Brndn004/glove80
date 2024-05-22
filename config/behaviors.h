@@ -40,7 +40,8 @@
         };
         ht_500: hold_tap_500_ms {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
             tapping-term-ms = <500>;
             bindings = <&kp>, <&kp>;
         };
