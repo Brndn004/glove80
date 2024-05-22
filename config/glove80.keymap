@@ -70,7 +70,7 @@
 /* R4 */                  &none  /*    */         &kp LBKT         &kp LPAR         &kp RPAR         &kp RBKT        &kp PSCRN                                                   /*|*/                                              &win_snap_left      &dt_dn     &dt_up  &win_snap_right    &kp LGUI  /*    */            &none
 /* R5 */                  &none  /*    */      &slack_prev      &slack_next         &kp LBRC         &kp RBRC          &kp ESC           &none              &none         &none  /*|*/           &none           &none       &none       &tab_prev  &hist_back  &hist_for        &tab_next  &win_close  /*    */            &none
 
-/* R6 */                 &trans  /*    */            &none            &none            &none            &none                           &trans     &to LAYER_Hold         &none  /*|*/           &none  &to LAYER_Base      &trans                       &none      &none            &none       &none  /*    */            &none
+/* R6 */                 &trans  /*    */            &none            &none            &none            &none                           &trans              &none         &none  /*|*/           &none  &to LAYER_Base      &trans                       &none      &none            &none       &none  /*    */            &none
 //                               /*    */                                                                                                   T4                 T5            T6  /*|*/              T6              T5          T4
             >;
         };
