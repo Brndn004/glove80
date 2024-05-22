@@ -32,13 +32,13 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp I>, <&kp_vim STAR>;
+            bindings = <&kp I>, <&kp STAR>;
         };
         vim_u: vim_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp U>, <&kp_vim HASH>;
+            bindings = <&kp U>, <&kp HASH>;
         };
     };
 };
