@@ -38,11 +38,11 @@
             tapping-term-ms = <200>;
             bindings = <&hold_stick LCTRL LCTRL>, <&sk LC(LALT)>;
         };
-        ht_alt_space: hold_tap_alt_space {
+        ht_500: hold_tap_500_ms {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp LALT>, <&kp SPACE>;
+            bindings = <&kp>, <&kp>;
         };
         vim_b: vim_b {
             compatible = "zmk,behavior-tap-dance";
