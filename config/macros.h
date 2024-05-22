@@ -317,5 +317,17 @@
                 = <&sk LALT>
                 , <&kp RIGHT>;
         };
+    // 1 param macros.
+    // Type the given key preceded by vim leader.
+    kp_vim: kp_vim {
+        compatible = "zmk,behavior-macro-one-param";
+        #binding-cells = <1>;
+        tap-ms = <1>;
+        wait-ms = <1>;
+        bindings
+            = <&kp SEMI>
+            , <&macro_param_1to1>
+            , <&kp MACRO_PLACEHOLDER>;
+        };
     };
 };
