@@ -54,6 +54,13 @@
             tapping-term-ms = <500>;
             bindings = <&kp>, <&kp>;
         };
+        vt5: vim_hold_tap_500_ms {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <500>;
+            bindings = <&vim>, <&kp>;
+        };
         vim_i: vim_i {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;

@@ -23,7 +23,7 @@
 
 /* My includes. */
 #include "behaviors.h"
-#include "macros.h"
+
 
 / {
     keymap {
@@ -36,7 +36,7 @@
 /* R2 */                  &none  /*    */            &none            &none            &none            &none            &none                                                /*|*/                                                   &none       &none      &none            &none       &none  /*    */            &none
 
 /* R3 */                  &none  /*    */       /**/ &none            &kp W            &kp E            &kp R            &kp T                                                /*|*/                                                   &kp Y      &vim_u     &vim_i            &kp O  /**/ &none  /*    */            &none
-/* R4 */                  &none  /*    */            &kp A            &kp S            &kp D            &kp F   &ht5 &vim N5 G                                                /*|*/                                          &ht5 &vim N6 H       &kp J      &kp K            &kp L    &kp SEMI  /*    */            &none
+/* R4 */                  &none  /*    */            &kp A            &kp S            &kp D            &kp F        &vt5 N5 G                                                /*|*/                                               &vt5 N6 H       &kp J      &kp K            &kp L    &kp SEMI  /*    */            &none
 /* R5 */                  &none  /*    */            &kp Z            &kp X            &kp C            &kp V            &kp B           &none          &none          &none  /*|*/           &none        &none      &none           &kp N       &kp M      &kp Q            &kp P    &kp BSLH  /*    */            &none
 
 /* R6 */   &magic LAYER_Magic 0  /*    */            &none            &none         &kp LALT            &none                   &ht5 LALT BSPC   &stick_shift  &layer_helper  /*|*/         &kp RET  &stick_ctrl  &kp SPACE                       &none      &none            &none       &none  /*    */            &none
