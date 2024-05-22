@@ -336,7 +336,7 @@
                 , <&kp RIGHT>;
         };
         vim: vim {
-            compatible = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             tap-ms = <1>;
             wait-ms = <1>;
