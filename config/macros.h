@@ -221,7 +221,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
-            wait-ms = <1>
+            wait-ms = <1>;
             bindings
                 = <&sk LGUI>
                 , <&kp DOWN>;
@@ -343,6 +343,6 @@
             bindings
                 = <&kp SEMI>
                 , <&kp MACRO_PLACEHOLDER>;
-        };
+ 
     };
 };
