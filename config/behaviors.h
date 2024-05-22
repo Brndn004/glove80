@@ -41,6 +41,18 @@
             tapping-term-ms = <200>;
             bindings = <&hold_stick LSHFT LSHFT>, <&skq LC(LSHFT)>;
         };
+        spenter: spenter {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SPACE>, <&kp RET>;
+        };
+        shft_ctrl: shft_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&skq LSHFT>, <&skq LCTRL>, <&skq LC(LSHFT)>;
+        };
         stick_ctrl: stick_ctrl {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -54,11 +66,11 @@
             tapping-term-ms = <500>;
             bindings = <&kp>, <&kp>;
         };
-        vt5: vim_hold_tap_500_ms {
+        vht: vim_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <500>;
+            tapping-term-ms = <350>;
             bindings = <&vim>, <&kp>;
         };
         vim_i: vim_i {
