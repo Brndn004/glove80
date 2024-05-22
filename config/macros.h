@@ -208,6 +208,24 @@
                 , <&kp PG_UP>
                 , <&kt LCTRL>;
         };
+        win_snap_up: window_snap_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <1>;
+            bindings
+                = <&sk LGUI>
+                , <&kp UP>;
+        };
+        win_snap_dn: window_snap_dn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <1>
+            bindings
+                = <&sk LGUI>
+                , <&kp DOWN>;
+        };
         win_snap_left: window_snap_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -316,6 +334,15 @@
             bindings
                 = <&sk LALT>
                 , <&kp RIGHT>;
+        };
+        vim: vim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;
+            tap-ms = <1>;
+            wait-ms = <1>;
+            bindings
+                = <&kp SEMI>
+                , <&kp MACRO_PLACEHOLDER>;
         };
     };
 };

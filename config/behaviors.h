@@ -9,19 +9,37 @@
           ignore-modifiers;
           bindings = <&kp>;
         };
-        //  Tap once: sticky LAYER_OneShot.
-        // Tap twice: to LAYER_HOLD.
+        // Hold for first param, sticky layer for second param.
+        mo_sticky: mo_sticky_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <100>;
+            bindings = <&mo>, <&sl>;
+        };
+        //       Hold: mo LAYER_Hold.
+        //   Tap once: sl LAYER_Hold.
+        //  Tap twice: sl LAYER_OneShot.
+        // Tap thrice: to LAYER_HOLD.
         layer_helper: layer_helper {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sl LAYER_OneShot>, <&to LAYER_Hold>;
+            bindings = <&mo_sticky LAYER_Hold LAYER_Hold>, <&sl LAYER_OneShot>, <&to LAYER_Hold>;
+        };
+        hold_stick: hold_stick {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&skq>;
         };
         stick_shift: stick_shift {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&skq LSHFT>, <&skq LC(LSHFT)>;
+            bindings = <&hold_stick LSHFT LSHFT>, <&skq LC(LSHFT)>;
         };
         stick_ctrl: stick_ctrl {
             compatible = "zmk,behavior-tap-dance";
