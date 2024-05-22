@@ -25,7 +25,7 @@
             tapping-term-ms = <100>;
             bindings = <&mo_sticky LAYER_Hold LAYER_OneShot>, <&to LAYER_Hold>;
         };
-        vim_w: vim_s {
+        vim_s: vim_s {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
