@@ -1,4 +1,11 @@
 
+/* #define VIM_DANCE_DOUBLE(t1, t2, t3) &vim_dance_double t1 t2 t3 */
+/* #define VIM_DANCE_SINGLE(t1, t2) &vim_dance t1 t2 */
+/* #define VIM_DANCE_REPEAT(t1) VIM_DANCE_SINGLE(t1, t1) */
+/* #define GET_MACRO(_1,_2,_3,NAME,...) NAME */
+/* #define VIM_DANCE(...) GET_MACRO(__VA_ARGS__, VIM_DANCE_DOUBLE, VIM_DANCE_SINGLE, VIM_DANCE_REPEAT)(__VA_ARGS__) */
+
+
 / {
     behaviors {
         // Hold for first param, sticky layer for second param.
@@ -6,7 +13,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&mo>, <&sl>;
         };
         //      Hold: LAYER_Hold.
@@ -15,8 +22,24 @@
         layer_helper: layer_helper {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo_sticky LAYER_Hold LAYER_OneShot>, <&tog LAYER_Hold>;
+            tapping-term-ms = <100>;
+            bindings = <&mo_sticky LAYER_Hold LAYER_OneShot>, <&to LAYER_Hold>;
+        };
+        //   Tap once: param
+        //  Tap twice: vim_leader param
+        vim_dance: vim_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            bindings = <&kp>, <&kp_vim>;
+        };
+        //   Tap once: param
+        //  Tap twice: vim_leader param
+        vim_dance_double: vim_dance_double {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp>, <&kp_vim>, <&kp_vim_double>;
         };
     };
 };
