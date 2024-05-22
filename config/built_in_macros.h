@@ -6,7 +6,6 @@
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
         lower: lower {
             compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo LAYER_Lower>, <&to LAYER_Lower>;
@@ -17,7 +16,6 @@
 / {
     macros {
         rgb_ug_status_macro: rgb_ug_status_macro {
-            label = "RGB_UG_STATUS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -32,28 +30,24 @@
     behaviors {
         bt_0: bt_0 {
             compatible = "zmk,behavior-tap-dance";
-            label = "BT_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&bt_select_0>, <&bt BT_DISC 0>;
         };
         bt_1: bt_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "BT_1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&bt_select_1>, <&bt BT_DISC 1>;
         };
         bt_2: bt_2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "BT_2";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&bt_select_2>, <&bt BT_DISC 2>;
         };
         bt_3: bt_3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "BT_3";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&bt_select_3>, <&bt BT_DISC 3>;
@@ -61,7 +55,6 @@
     };
     macros {
         bt_select_0: bt_select_0 {
-            label = "BT_SELECT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -69,7 +62,6 @@
                   <&bt BT_SEL 0>;
         };
         bt_select_1: bt_select_1 {
-            label = "BT_SELECT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -77,7 +69,6 @@
                   <&bt BT_SEL 1>;
         };
         bt_select_2: bt_select_2 {
-            label = "BT_SELECT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -85,7 +76,6 @@
                   <&bt BT_SEL 2>;
         };
         bt_select_3: bt_select_3 {
-            label = "BT_SELECT_3";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -96,7 +86,6 @@
 #else
     macros {
         bt_0: bt_0 {
-            label = "BT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -104,7 +93,6 @@
                   <&bt BT_SEL 0>;
         };
         bt_1: bt_1 {
-            label = "BT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -112,7 +100,6 @@
                   <&bt BT_SEL 1>;
         };
         bt_2: bt_2 {
-            label = "BT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -120,7 +107,6 @@
                   <&bt BT_SEL 2>;
         };
         bt_3: bt_3 {
-            label = "BT_3";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -135,7 +121,6 @@
     behaviors {
         magic: magic {
             compatible = "zmk,behavior-hold-tap";
-            label = "MAGIC_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
