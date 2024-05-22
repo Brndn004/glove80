@@ -1,6 +1,14 @@
 
 / {
     behaviors {
+        skq: sticky_key_quick_release {
+          compatible = "zmk,behavior-sticky-key";
+          #binding-cells = <1>;
+          release-after-ms = <1000>;
+          quick-release;
+          ignore-modifiers;
+          bindings = <&kp>;
+        };
         //  Tap once: sticky LAYER_OneShot.
         // Tap twice: to LAYER_HOLD.
         layer_helper: layer_helper {
@@ -13,13 +21,13 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk LSHFT>, <&sk LC(LSHFT)>;
+            bindings = <&skq LSHFT>, <&skq LC(LSHFT)>;
         };
         stick_ctrl: stick_ctrl {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk LCTRL>, <&sk LC(LALT)>;
+            bindings = <&skq LCTRL>, <&skq LC(LALT)>;
         };
         ht5: hold_tap_500_ms {
             compatible = "zmk,behavior-hold-tap";
