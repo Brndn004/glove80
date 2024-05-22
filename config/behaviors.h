@@ -18,6 +18,32 @@
             tapping-term-ms = <100>;
             bindings = <&mo_sticky LAYER_Hold LAYER_OneShot>, <&to LAYER_Hold>;
         };
+        hold_stick: hold_stick {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&sk>;
+        };
+        stick_shift: stick_shift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hold_stick LSHFT LSHFT>, <&sk LC(LSHFT)>;
+        };
+        stick_ctrl: stick_ctrl {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hold_stick LCTRL LCTRL>, <&sk LC(LALT)>;
+        };
+        ht_alt_space: hold_tap_alt_space {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings = <&kp LALT>, <&kp SPACE>;
+        };
         vim_b: vim_b {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -107,6 +133,12 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp Z>, <&kp_vim Z>;
+        };
+        vim_semi: vim_semi {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SEMI>, <&kp_vim SEMI>;
         };
     };
 };
