@@ -18,11 +18,35 @@
             tapping-term-ms = <100>;
             bindings = <&mo_sticky LAYER_Hold LAYER_OneShot>, <&to LAYER_Hold>;
         };
+        vim_d: vim_d {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp D>, <&kp_vim D>;
+        };
+        vim_e: vim_e {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp E>, <&kp_vim E>;
+        };
+        vim_r: vim_r {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp R>, <&kp_vim R>;
+        };
         vim_s: vim_s {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp S>, <&kp_vim SQT>, <&kp_vim DQT>;
+        };
+        vim_t: vim_t {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp T>, <&kp_vim T>;
         };
         vim_w: vim_w {
             compatible = "zmk,behavior-tap-dance";
