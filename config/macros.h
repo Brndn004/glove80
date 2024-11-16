@@ -133,6 +133,15 @@
                 , <&kp DOWN>
                 , <&kt LALT>;
         };
+        dt_up: tmux_leader {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            tap-ms = <1>;
+            wait-ms = <1>;
+            bindings
+                = <&sk LCTRL>
+                , <&kp A>;
+        };
         dt_up: desktop_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
