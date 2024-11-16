@@ -133,7 +133,7 @@
                 , <&kp DOWN>
                 , <&kt LALT>;
         };
-        dt_up: tmux_leader {
+        tmux_leader: tmux_leader {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <1>;
